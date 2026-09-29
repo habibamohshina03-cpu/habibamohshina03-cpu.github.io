@@ -132,19 +132,20 @@ section[id] {
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 6vw, 4.2rem);
-  line-height: 1.05;
-  letter-spacing: -0.045em;
-  margin: 0 0 16px;
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin: 0 0 20px 0;
   color: #13221d;
+  word-break: break-word;
 }
 
 .lead {
   font-size: 1.15rem;
   color: #4d5d57;
   max-width: 680px;
-  margin: 0 auto 26px;
-  line-height: 1.65;
+  margin: 0 auto 28px;
+  line-height: 1.7;
 }
 
 .buttons {
@@ -423,8 +424,8 @@ section[id] {
   font-size: 0.93rem;
 }
 
-/* Google Drive Link Badge */
-.drive-link {
+/* Google Drive & ResearchGate Link Badges */
+.drive-link, .rg-link {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -445,7 +446,19 @@ section[id] {
   border-color: #1b4d42;
 }
 
-.drive-link svg {
+.rg-link {
+  background: #eef7f5;
+  color: #0b594d;
+  border-color: #c4e2db;
+}
+
+.rg-link:hover {
+  background: #008779;
+  color: #ffffff;
+  border-color: #008779;
+}
+
+.drive-link svg, .rg-link svg {
   width: 15px;
   height: 15px;
   flex-shrink: 0;
@@ -539,6 +552,18 @@ footer {
     width: 150px;
     height: 185px;
     margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+    line-height: 1.25;
+    margin: 0 0 18px 0;
+  }
+
+  .lead {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin: 0 auto 24px;
   }
 
   .grid2, .grid3 {
